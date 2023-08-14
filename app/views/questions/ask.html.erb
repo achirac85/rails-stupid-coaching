@@ -1,0 +1,10 @@
+<div class="center-content">
+  <div class="form-container">
+    <%= form_with url: "/answer", method: :get, local: true do |form| %>
+      <form action="/answer" data-turbo="false" method="post">
+        <input type="text" name="question">
+        <input type="submit" value="Ask!">
+      </form>
+    <% end %>
+  </div>
+</div>
